@@ -1,0 +1,31 @@
+
+.colorPanelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.panel {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.colorInfo {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.sliders {
+  margin: 20px;
+}
+
+.sliderContainer {
+  margin: 10px 0;
+}
+

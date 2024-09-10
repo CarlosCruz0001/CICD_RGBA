@@ -7,9 +7,9 @@ import ColorPanel from "./components/colorPanel/index";
 function App() {
 
   const initialColor = {
-    red: 100,
-    green: 150,
-    blue: 200,
+    red: 0,
+    green: 0,
+    blue: 0,
     alpha: 0.8
   };
   

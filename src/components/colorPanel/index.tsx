@@ -30,8 +30,12 @@ function ColorPanel({ color }: Props) {
   return (
     <>
       <div className={styles.colorPanelContainer}>
-        <div className={styles.panel} style={{ backgroundColor }}></div>
-        <div className={styles.colorInfo}>
+        <div
+          className={styles.panel}
+          style={{ backgroundColor }}
+          data-cy="colorPanelContainer"  // Adicionando o seletor de dados
+        ></div>
+        <div className={styles.colorInfo} data-cy="inputsRGBA">
           rgba({red}, {green}, {blue}, {alpha})
         </div>
       </div>
@@ -47,6 +51,7 @@ function ColorPanel({ color }: Props) {
             step="1"
             value={red}
             onChange={handleColorChange}
+            data-cy="inputRed"
           />
         </div>
         <div className={styles.sliderContainer}>
@@ -60,6 +65,7 @@ function ColorPanel({ color }: Props) {
             step="1"
             value={green}
             onChange={handleColorChange}
+            data-cy="inputGreen"
           />
         </div>
         <div className={styles.sliderContainer}>
@@ -73,6 +79,7 @@ function ColorPanel({ color }: Props) {
             step="1"
             value={blue}
             onChange={handleColorChange}
+            data-cy="inputBlue"
           />
         </div>
         <div className={styles.sliderContainer}>
@@ -86,6 +93,7 @@ function ColorPanel({ color }: Props) {
             step="0.1"
             value={alpha}
             onChange={handleColorChange}
+            data-cy="inputAlpha"
           />
         </div>
       </div>
